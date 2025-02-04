@@ -20,7 +20,6 @@ const NavBar = () => {
         navigate('/email-verify')
         toast.success(Data.message)
       }
-       toast.error(Data.message)
       } catch (error) {
         const errorMessage = error.response?.data?.message || 'An unexpected error occurred';
         toast.error(errorMessage);
