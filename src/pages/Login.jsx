@@ -103,7 +103,7 @@ const Login = () => {
     overflow: "hidden", // Prevent overflow
     textOverflow: "ellipsis", // Add ellipsis for long text
     whiteSpace: "nowrap", // Prevent text from wrapping
-  }} type="text" name="email" value={formData.email} placeholder='email address' onChange={handleChange} className=' outline-none bg-transparent'/>
+  }} type="email" name="email" value={formData.email} placeholder='email address' onChange={handleChange} className=' outline-none bg-transparent'/>
           </div>
           <div className='flex items-center gap-3 mb-3 bg-[#333a5c] px-6 py-2.5 w-full rounded-full'>
             <img onClick={()=>{
