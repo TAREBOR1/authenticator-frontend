@@ -89,7 +89,7 @@ const Login = () => {
             <img src={assets.person_icon}/>
             <input  style={{
     backgroundColor: "transparent",
-    maxWidth: "90%", // Ensure the input doesn't exceed its container
+    maxWidth: "80%", // Ensure the input doesn't exceed its container
     overflow: "hidden", // Prevent overflow
     textOverflow: "ellipsis", // Add ellipsis for long text
     whiteSpace: "nowrap", // Prevent text from wrapping
