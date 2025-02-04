@@ -105,7 +105,7 @@ const Login = () => {
             src={assets.lock_icon}/>
             <input style={{
               backgroundColor:"transparent"
-            }}  type={show?"text":"password"} name="password" value={formData.password} placeholder='password' onChange={handleChange} className='outline-none bg-transparent'/>
+            }}  type={show?"text":"password"} name="password" value={formData.password} placeholder='password' onChange={handleChange} className= 'outline-none bg-transparent'/>
           </div>
           <p onClick={()=>{
             navigate('/reset-password')
