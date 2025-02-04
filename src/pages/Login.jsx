@@ -87,11 +87,15 @@ const Login = () => {
         <form onSubmit={handleSubmit} >
           { state==="sign up" && <div className='flex items-center gap-3 mb-3 bg-[#333a5c] px-6 py-2.5 w-full rounded-full'>
             <img src={assets.person_icon}/>
-            <input type="text" name="username" value={formData.username} placeholder='full name' onChange={handleChange} className='outline-none bg-transparent'/>
+            <input style={{
+              backgroundColor:"transparent"
+            }}  type="text" name="username" value={formData.username} placeholder='full name' onChange={handleChange} className='outline-none bg-transparent'/>
           </div>}
           <div className='flex items-center gap-3 mb-3 bg-[#333a5c] px-6 py-2.5 w-full rounded-full'>
             <img src={assets.mail_icon}/>
-            <input type="text" name="email" value={formData.email} placeholder='email address' onChange={handleChange} className='outline-none bg-transparent'/>
+            <input style={{
+              backgroundColor:"transparent"
+            }} type="text" name="email" value={formData.email} placeholder='email address' onChange={handleChange} className='outline-none bg-transparent'/>
           </div>
           <div className='flex items-center gap-3 mb-3 bg-[#333a5c] px-6 py-2.5 w-full rounded-full'>
             <img onClick={()=>{
@@ -99,7 +103,9 @@ const Login = () => {
             }} 
             
             src={assets.lock_icon}/>
-            <input type={show?"text":"password"} name="password" value={formData.password} placeholder='password' onChange={handleChange} className='outline-none bg-transparent'/>
+            <input style={{
+              backgroundColor:"transparent"
+            }}  type={show?"text":"password"} name="password" value={formData.password} placeholder='password' onChange={handleChange} className='outline-none bg-transparent'/>
           </div>
           <p onClick={()=>{
             navigate('/reset-password')
